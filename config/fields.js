@@ -58,7 +58,7 @@ export const LeadSchema = {
   rawData:              Object,   // Full raw API/HTML response (JSONB in DB)
 
   // ── Outreach & CRM ────────────────────────────────────────────
-  status:               String,   // 'raw' | 'enriched' | 'ready' | 'sent' | 'replied' | 'visit_booked' | 'closed' | 'unsubscribed'
+  status:               String,   // 'raw' | 'enriched' | 'ready' | 'sent' | 'replied' | 'visit_booked' | 'closed' | 'unsubscribed' | 'email_failed
   emailSentAt:          String,
   emailOpenedAt:        String,
   emailRepliedAt:       String,
@@ -131,7 +131,7 @@ export const DEFAULT_LEAD = {
   rawData:              null,   // Full raw API/HTML response (JSONB in DB)
 
   // ── Outreach & CRM ────────────────────────────────────────────
-  status:               'raw',   // 'raw' | 'enriched' | 'ready' | 'sent' | 'replied' | 'visit_booked' | 'closed' | 'unsubscribed'
+  status:               'raw',   // 'raw' | 'enriched' | 'ready' | 'sent' | 'replied' | 'visit_booked' | 'closed' | 'unsubscribed' | 'email_failed
   emailSentAt:          null,
   emailOpenedAt:        null,
   emailRepliedAt:       null,
